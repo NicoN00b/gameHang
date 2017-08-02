@@ -9,43 +9,69 @@ import static org.junit.Assert.*;
  */
 public class GameTest {
     @Test
-    public void  newArray_createCharArray_1() {
+    public void  newArray_createCharArray_E() {
         Game testGame = new Game();
-        assertEquals(true, testGame.findWord("test", 'e'));
+        assertEquals(true, testGame.findWord( 'e'));
     }
     @Test
-    public void  newArray_createCharArray_false() {
+    public void  newArray_createCharArray_S() {
         Game testGame = new Game();
-        assertEquals(false, testGame.findWord("test", 'v'));
+        assertEquals(true, testGame.findWord('s'));
     }
     @Test
-    public void  newArray_createCharArray_false2() {
+    public void  newArray_createCharArray_T() {
         Game testGame = new Game();
-        assertEquals(false, testGame.findWord("test", 'o'));
+        assertEquals(true, testGame.findWord('t'));
     }
     @Test
-    public void  newArray_createCharArray_false3() {
+    public void  newArray_createCharArray_P() {
         Game testGame = new Game();
-        assertEquals(false, testGame.findWord("test", 'o'));
+        assertEquals(true, testGame.findWord('p'));
     }
     @Test
-    public void  newWordBank_findWord_1() {
+    public void  newArray_createCharArray_A() {
         Game testGame = new Game();
-        String Expected = "apple";
-        assertEquals(Expected, testGame.wordChoice());
+        assertEquals(true, testGame.findWord('a'));
     }
-    @Test
-    public void  newWordBank_findWord_2() {
-        Game testGame = new Game();
-        String Expected = "tea";
-        assertEquals(Expected, testGame.wordChoice());
-    }
-    @Test
-    public void  newWordBank_findWord3() {
-        Game testGame = new Game();
-        String Expected = "cat";
-        assertEquals(Expected, testGame.wordChoice());
-    }
+//    @Test
+//    public void  newArray_lookForLetterC_true() {
+//        Game testGame = new Game();
+//        assertEquals(true, testGame.findWord( 'c'));
+//    }
+//    @Test
+//    public void  newArray_createCharArray_false() {
+//        Game testGame = new Game();
+//        assertEquals(false, testGame.findWord( 'v'));
+//    }
+//    @Test
+//    public void  newArray_createCharArray_false2() {
+//        Game testGame = new Game();
+//        assertEquals(false, testGame.findWord( 'o'));
+//    }
+//    @Test
+//    public void  newArray_createCharArray_false3() {
+//        Game testGame = new Game();
+//        assertEquals(true, testGame.findWord( 'p'));
+//    }
+//    @Test
+//    public void  newWordBank_findWord_1() {
+//        Game testGame = new Game();
+//        String Expected = "apple";
+//        assertEquals(Expected, testGame.wordChoice());
+//    }
+//    @Test
+//    public void  newWordBank_findWord_2() {
+//        Game testGame = new Game();
+//        String Expected = "tea";
+//        assertEquals(Expected, testGame.wordChoice());
+//    }
+//    @Test
+//    public void  newWordBank_findWord3() {
+//        Game testGame = new Game();
+//        String Expected = "cat";
+//        assertEquals(Expected, testGame.wordChoice());
+//    }
+
 
 //    @Test
 //    public void newArray_createCharArray_1() {
