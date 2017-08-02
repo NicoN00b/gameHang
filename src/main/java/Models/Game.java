@@ -34,7 +34,7 @@ public class Game {
             }
 
         }
-        System.out.println(gameWord);
+
         return result;
     }
 
@@ -46,4 +46,6 @@ public class Game {
         return gameWord;
 
     }
+
+
 }

@@ -16,15 +16,29 @@ public class App {
             Game newGame = new Game();
             String output = newGame.findWord("", input);
             System.out.println(output);
+            String compare = "";
 
-            System.out.println("Make another: ");
-            String answerTwo= bufferedReader.readLine();
-            char inputAnother = answerTwo.charAt(0);
-            String outputTwo = newGame.findWord(output, inputAnother);
-            System.out.println(outputTwo);
+            for (int x= 0; x<output.length(); x++) {
+                compare += "-";
+            }
+
+            
+            for (int i = 0 ; i <output.length(); i++) {
+                System.out.println("Make another: ");
+                String answerTwo= bufferedReader.readLine();
+                char inputAnother = answerTwo.charAt(0);
+                output = newGame.findWord(output, inputAnother);
+                System.out.println(output);
+                char [] outputArray = output.toCharArray();
 
 
 
+                //System.out.println(compare);
+                if (output.equals(compare)){
+                    System.out.println("you are done!");
+                    break;
+                }
+            }
         }
         catch (IOException e) {
             e.printStackTrace();
